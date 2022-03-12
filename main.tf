@@ -4,12 +4,11 @@ provider "aws" {
   secret_key = "Av+rl+rKgmoGoUoLHErUbwuL4yLtJOEfnHZL+PVH"
 }
 
-resource  "aws_instance"  "web-server" {
-  ami  = "ami-0e0ff68cb8e9a188a"
-  instance_type  = "t2.micro"
+resource "aws_instance" "webserver" {
+  ami           = "ami-0e0ff68cb8e9a188a" # ap-south-1
+  instance_type = "t2.micro"
   
   tags = {
-  
-   Name = "WEB"
+     Name = "web"
    }
  } 
