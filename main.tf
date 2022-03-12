@@ -6,7 +6,7 @@ provider "aws" {
 
 resource  "aws_instance"  "web-server" {
   ami  = "ami-0e0ff68cb8e9a188a"
-  instance_tpe  = "t2.micro"
+  instance_type  = "t2.micro"
   
   tags = {
   
