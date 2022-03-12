@@ -5,10 +5,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "webserver" {
-  ami           = "ami-0e0ff68cb8e9a188a" # ap-south-1
+  ami           = "ami-06a0b4e3b7eb7a300" # ap-south-1
   instance_type = "t3.medium"
   
-  tags = {
-     Name = "web"
-   }
+ 
  } 
