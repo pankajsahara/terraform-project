@@ -4,7 +4,7 @@ provider "aws" {
   Secret_key = "Av+rl+rKgmoGoUoLHErUbwuL4yLtJOEfnHZL+PVH"
 }
 
-resource = "aws_instance"  "web-server" {
+resource  "aws_instance"  "web-server" {
   ami  = "ami-0e0ff68cb8e9a188a"
   instance_tpe  = "t2.micro"
   
